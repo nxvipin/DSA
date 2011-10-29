@@ -20,4 +20,5 @@ class rbt{
 		rbt(int);
 		~rbt();
 		void leftRotate(int);
+		void rightRotate(int);
 };
