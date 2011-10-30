@@ -1,12 +1,19 @@
 #include "rbtlib.h";
 #include <iostream>
 using namespace std;
-rbt::rbt(int n){
-	this->n = n;
-	this->node = new rbtNode[n];
+rbt::rbt(){
+	root=NIL;
 }
-rbt::~rbt(){
-	delete [] this->node;
+
+rbt::~rbt() {}
+
+rbt::rbtNode::rbtNode(int key){
+	this->key = key;
+	this->color = RED;
+}
+
+void rbt::createNode(int key){
+	node.push_back(key);
 }
 
 void rbt::leftRotate(int x){
