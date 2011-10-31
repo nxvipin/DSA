@@ -12,8 +12,9 @@ rbt::rbtNode::rbtNode(int key){
 	this->color = RED;
 }
 
-void rbt::createNode(int key){
+int rbt::createNode(int key){
 	node.push_back(key);
+	return node.size()-1;
 }
 
 void rbt::leftRotate(int x){

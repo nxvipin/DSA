@@ -18,7 +18,7 @@ class rbt{
 		vector <rbtNode> node;
 		rbt();
 		~rbt();
-		void createNode(int);
+		int createNode(int);
 		void leftRotate(int);
 		void rightRotate(int);
 };
